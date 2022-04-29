@@ -37,7 +37,7 @@ public class DefaultConverterLookup implements ConverterLookup, ConverterRegistr
     private Map<String, Converter> serializationMap = null;
 
     public DefaultConverterLookup() {
-        this(new HashMap<String, Converter>());
+        this(new HashMap<>());
     }
 
     /**
@@ -107,7 +107,7 @@ public class DefaultConverterLookup implements ConverterLookup, ConverterRegistr
     }
 
     private Object readResolve() {
-        typeToConverterMap = serializationMap == null ? new HashMap<String, Converter>() : serializationMap;
+        typeToConverterMap = serializationMap == null ? new HashMap<>() : serializationMap;
         serializationMap = null;
         return this;
     }
