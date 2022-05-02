@@ -42,10 +42,7 @@ public class WeakCache<K, V> extends AbstractMap<K, V> {
      * @since 1.4
      */
     public WeakCache() {
-        this(new WeakHashMap<>());
-    }
-
-    /**
+        this(new WeakHashMap<  /**
      * Construct a WeakCache.
      * 
      * @param map the map to use

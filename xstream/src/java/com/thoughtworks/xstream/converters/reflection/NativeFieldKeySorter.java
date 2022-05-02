@@ -26,7 +26,7 @@ public class NativeFieldKeySorter implements FieldKeySorter {
 
     @Override
     public Map<FieldKey, Field> sort(final Class<?> type, final Map<FieldKey, Field> keyedByFieldKey) {
-        final Map<FieldKey, Field> map = new TreeMap<>(new Comparator<FieldKey>() {
+        final Map<FieldKey, Field> map = new TreeMap<r<FieldKey>() {
 
             @Override
             public int compare(final FieldKey fieldKey1, final FieldKey fieldKey2) {

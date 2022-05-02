@@ -191,7 +191,7 @@ public abstract class AbstractReflectionConverter implements Converter, Caching 
         };
 
         final Map<String, Set<Mapper.ImplicitCollectionMapping>> hiddenMappers =
-                new HashMap<String, Set<Mapper.ImplicitCollectionMapping>>();
+                new HashMap<>();
         for (final FieldInfo info : fields) {
             if (info.value != null) {
                 final boolean isCollection = info.value instanceof Collection;

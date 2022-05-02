@@ -42,7 +42,7 @@ public class ThreadSafePropertyEditor {
             throw new IllegalArgumentException(type.getName() + " is not a " + PropertyEditor.class.getName());
         }
         editorType = type;
-        pool = new Pool<PropertyEditor>(initialPoolSize, maxPoolSize, new Pool.Factory<PropertyEditor>() {
+        pool = new Pool<>(initialPoolSize, maxPoolSize, new Pool.Factory<PropertyEditor>() {
             @Override
             public PropertyEditor newInstance() {
                 ErrorWritingException ex = null;

@@ -286,7 +286,7 @@ public class TraxSource extends SAXSource {
         }
         @SuppressWarnings("unchecked")
         final List<Object> olist = (List<Object>)list;
-        source = list instanceof Queue ? (Queue<?>)list : new ListWrappingQueue<>(olist);
+        source = list instanceof Queue ? (Queue<?>)list : new ListWrappingQueue<t);
 
         configureXMLReader();
     }

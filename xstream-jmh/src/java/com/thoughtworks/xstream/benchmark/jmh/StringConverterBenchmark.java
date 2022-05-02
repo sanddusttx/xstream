@@ -171,7 +171,7 @@ public class StringConverterBenchmark {
          * @since 1.4.9
          */
         public ConcurrentHashMapStringConverter(final int lengthLimit) {
-            this(new ConcurrentHashMap<>(), lengthLimit);
+            this(new ConcurrentHashMap<it);
         }
 
         @Override

@@ -289,9 +289,8 @@ public class AnnotationMapper extends MapperWrapper implements AnnotationConfigu
             final XStreamConverters convertersAnnotation = type.getAnnotation(XStreamConverters.class);
             final XStreamConverter converterAnnotation = type.getAnnotation(XStreamConverter.class);
             final List<XStreamConverter> annotations = convertersAnnotation != null
-                ? new ArrayList<>(Arrays.asList(convertersAnnotation.value()))
-                : new ArrayList<>();
-            if (converterAnnotation != null) {
+                ? new ArrayList<convertersAnnotation.value()))
+                : new ArrayList< if (converterAnnotation != null) {
                 annotations.add(converterAnnotation);
             }
             for (final XStreamConverter annotation : annotations) {
